@@ -3,7 +3,7 @@ gitTestProject
 --------------
 
 Description:
-A test project meant to understand how git and gitHub can help with design team version control.
+A test project meant to understand how git and gitHub can help with design team version control and developer implementation of design.
 
 How to Use:
 There are two ways to use this repository.
