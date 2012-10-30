@@ -2,9 +2,11 @@
 gitTestProject
 --------------
 
-Description:	A test project meant to understand how git and gitHub can help with design team version control.
+Description:
+A test project meant to understand how git and gitHub can help with design team version control.
 
-How to Use:		There are two ways to use this repository.
+How to Use:
+There are two ways to use this repository.
 
 	1. HTML & CSS
 		a. Checkout the "html" and "css" directories
