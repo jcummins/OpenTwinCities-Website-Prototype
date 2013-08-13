@@ -2,7 +2,7 @@ OpenTwinCities Website UX Prototype
 -----------------------------------
 
 Description:
-This is a prototype for OTC's website that could potentially change drastically over time.
+This is a prototype for OTC's website that could potentially change drastically over time. To summarize, this is a "living spec document" that just happens to be interactive, visual, and contain actual content.
 
 Purpose & Goals:
 1. Provide accessibility for developers on design, ux, or front-end aspects of the OTC website
