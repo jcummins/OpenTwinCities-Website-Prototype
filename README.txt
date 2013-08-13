@@ -1,17 +1,17 @@
---------------
-gitTestProject
---------------
+-----------------------------------
+OpenTwinCities Website UX Prototype
+-----------------------------------
+
+Updated 08.2013 for reinvigorating some civic engagement... and testing the github app thing for designers so we don't need to learn command line stuff...
 
 Description:
-A test project meant to understand how git and gitHub can help with design team version control and developer implementation of design.
+This is a persistent prototype for OTC's website that could potentially change drastically over time.
 
-There are two ways to use this repository:
+Purpose & Goals:
+1. Provide accessibility for developers on design, ux, or front-end aspects of the OTC website
+2. Serve as a "living" guideline and reference for OTC's website content, visual design, interaction design, and overall user experience
+3. Act as a playground for testing and experimenting of new website ideas
+4. Figure out if a designer/ux guy can use github without learning too much dev-related details
+5. Figure out if developers will be OK with this use of github to go from prototype to production
 
-	1. HTML & CSS
-		a. Use the "html" and "css" directories
-		b. Include the css file in your project's .html
-		c. Utilize the html 'views' in your code as necessary
-
-	2. Image-based HTML
-		a. Use the "imgs" directory
-		b. Create your own HTML and CSS to apply images to your interface
+If you have comments, ideas, suggestions, and the like, please get in touch!
