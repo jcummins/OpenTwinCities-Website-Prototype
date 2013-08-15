@@ -80,19 +80,53 @@ a:hover {
 }
 
 #hero {
-	padding:0 0 3em 0;
-	background:#ED9C00;
+	background:#ED9C00 url('../imgs/bg_hero2.png') top left;
+	overflow:hidden;
 	position:relative;
 }
+#hero #logobg {
+	position:absolute;
+	top:-6em;
+	left:-11em;
+	z-index:2;
+}
 #hero .inner {
-	max-width:1280px;
+	max-width:80em;
 	margin:0 auto;
+	overflow:visible;
 	position:relative;
+	z-index:3;
+}
+
+#hero .col1 {
+	width:60%;
+	float:left;
+}
+
+#hero .col2 {
+	width:40%;
+	float:left;
+}
+
+#title {
+	padding:2.5em; /* 40 / 16 = 2.5 */
+	color:#40372F;
+	font-family:"Quicksand";
+}
+#title .logo {
+	margin: 0 0.625em 0 0;
+	float:left;
+}
+#title .verbage {
+	float:left;
+}
+#title .verbage .name {
+	font-size:3em;
 }
 
 #info {
 	max-width:28em;
-	margin:0 0 0 10em;
+	margin:0 0 2.5em 9.5em;
 	padding:1.4em;
 	background:#FFF;
 	border-radius:1em;
@@ -113,24 +147,9 @@ a:hover {
 	float:left;
 }
 
-#title {
-	padding:2.5em; /* 40 / 16 = 2.5 */
-	color:#40372F;
-	font-family:"Quicksand";
-}
-#title .logo {
-	margin: 0 0.625em 0 0;
-	float:left;
-}
-#title .verbage {
-	float:left;
-}
-#title .verbage .name {
-	font-size:3em;
-}
-
 #meetup {
 	max-width:16em;
+	margin:2.5em auto;
 	padding:1.2em;
 	background:rgba(255,255,255,0.5);
 	border-radius:1em;
@@ -138,9 +157,6 @@ a:hover {
 	font-family:"Quicksand";
 	font-size:1.2em;
 	font-weight:700;
-	position:absolute;
-	top:3em;
-	right:10em;
 }
 #meetup p {
 	margin:0 0 0.2em 0;
@@ -152,23 +168,32 @@ a:hover {
 	border-top:0.6em solid #40372F;
 }
 #content .inner {
-	max-width:75.4em;
+	max-width:79.4em;
 	margin:0 auto;
-	padding:2em;
-	background:#FFF;
 	border-left:0.6em solid #40372F;
+	clear:both;
 }
-#content .left {
-	max-width:40em;
+
+#content .col1 {
+	width:59.6%;
+	background:#FFF;
+	float:left;
 }
-#content .left hr {
-	margin:2em 0;
+#content .col1 hr {
+	margin:0 2em;
 	border:none;
 	border-bottom:1px solid #A2D8DB;
 }
 
-.arty-brief {
+#content .col2 {
+	width:40.4%;
+	min-height:100%;
+	background:#EEE;
+	float:left;
+}
 
+.arty-brief {
+	margin:2.5em;
 }
 .arty-brief h1 {
 	margin:0;
@@ -186,6 +211,32 @@ a:hover {
 	font-size:0.9em;
 }
 
+#sponsors {
+	margin:2.5em;
+}
+#sponsors h2 {
+	color:#40372F;
+	font-family:"Quicksand";
+	font-size:1.5em;
+	font-weight:700;
+}
+#sponsors .btn-green,
+#sponsors .btn-red {
+	width:50%;
+	margin:0 auto;
+}
+#sponsors .sponsor {
+	margin:1em 0;
+	text-align:center;
+}
+#sponsors .sponsor a {
+	margin:0 auto;
+	display:block;
+}
+#sponsors .sponsor a:hover {
+	background:transparent;
+}
+
 footer {
 	min-height:6em;
 	padding:2em;
@@ -194,9 +245,9 @@ footer {
 }
 
 /* universal */
-.btn-red {
+a.btn-red {
 	padding:1em;
-	background:#F1411B;
+	background:#a53917;
 	background: -moz-linear-gradient(top, #e7401a 0%, #a53917 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e7401a), color-stop(100%,#a53917)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #e7401a 0%,#a53917 100%); /* Chrome10+,Safari5.1+ */
@@ -208,8 +259,36 @@ footer {
 	box-shadow:0 2px 8px rgba(0,0,0,0.4);
 	color:#FFF;
 	display:block;
+	font-family:"Quicksand";
+	font-weight:700;
 	text-align:center;
 }
+a.btn-red:hover {
+	background:#e7401a;
+}
+a.btn-green {
+	padding:1em;
+	background:#62a908;
+	background: -moz-linear-gradient(top, #88bd09 0%, #62a908 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#88bd09), color-stop(100%,#62a908)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #88bd09 0%,#62a908 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #88bd09 0%,#62a908 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #88bd09 0%,#62a908 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #88bd09 0%,#62a908 100%); /* W3C */
+	border:0.2em solid #FFF;
+	border-radius:2em;
+	box-shadow:0 2px 8px rgba(0,0,0,0.4);
+	color:#FFF;
+	display:block;
+	font-family:"Quicksand";
+	font-weight:700;
+	text-align:center;
+}
+a.btn-green:hover {
+	background:#88bd09;
+}
+
+
 .clear {
 	content:'';
 	display:block;
@@ -222,11 +301,20 @@ footer {
 
 
 /*** RESPONSIVENESS ***/
-@media (max-width:1280px) {
-	
-	
+@media (max-width:960px) {
+	#title {
+		padding:1.5em;
+	}
+	#meetup {
+		margin:1.5em auto;
+		padding:1.2em;
+		font-size:1em;
+	}
+	#info {
+		margin:0 0 2.5em 8em;
+	}
 }
-@media (max-width:1024px) {
+@media (max-width:768px) {
 	
 }
 
