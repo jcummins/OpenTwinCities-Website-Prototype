@@ -45,13 +45,16 @@ a:hover {
 	outline:2px dotted #F1411B;
 }
 
-/* */
+/*
 #topnav {
 	background:#40372F;
 	color:#FFF;
 	box-shadow:0 2px 16px rgba(0,0,0,0.4);
 	position:relative;
 	z-index:1000;
+	margin-bottom:0;
+	border: 0;
+	border-radius:0;
 }
 #topnav nav {
 	max-width:1280px;
@@ -79,6 +82,50 @@ a:hover {
 	top:0.75em;
 	left:1em;
 }
+
+*/
+
+#topnav, #topnav nav {
+	background:#40372F;
+	color:#FFF;
+	margin-bottom:0;
+	border: 0;
+	border-radius:0;
+}
+#topnav {
+	box-shadow:0 2px 16px rgba(0,0,0,0.4);
+}
+
+#topnav nav {
+	max-width:1280px;
+	margin:0 auto;
+}
+
+#topnav a,
+#topnav a:visited {
+	color:#FFF;
+	font-size:0.9em;
+}
+
+#topnav a:hover {
+	background:#FFF;
+	color:#40372F;
+}
+
+#topnav a.navbar-brand img {
+	vertical-align: middle;
+	height:1.5em;
+}
+
+#topnav .navbar-form {
+	border:0;
+}
+
+#topnav .navbar-collapse {
+	border:0;
+}
+
+
 
 #hero {
 	background:#ED9C00 url('../imgs/bg_hero2.png') top left;
@@ -126,7 +173,7 @@ a:hover {
 }
 
 #info {
-	max-width:28em;
+	max-width:30em;
 	margin:0 0 2.5em 9.5em;
 	padding:1.4em;
 	background:#FFF;
@@ -154,7 +201,7 @@ a:hover {
 
 
 #meetup {
-	max-width:16em;
+	max-width:20em;
 	margin:2.5em auto;
 	padding:1.2em;
 	background:rgba(255,255,255,0.5);
